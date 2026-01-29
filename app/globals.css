@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #0a0a0a;
+  color: #ededed;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input {
+  padding: 0.75rem;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background: #1a1a1a;
+  color: #ededed;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: #3ecf8e;
+}
+
+button {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: #3ecf8e;
+  color: #0a0a0a;
+}
+
+.btn-google {
+  background: #fff;
+  color: #0a0a0a;
+}
+
+.btn-secondary {
+  background: #333;
+  color: #ededed;
+}
+
+.divider {
+  text-align: center;
+  color: #666;
+  margin: 0.5rem 0;
+}
+
+.toggle {
+  text-align: center;
+  margin-top: 1rem;
+  color: #888;
+}
+
+.toggle button {
+  background: none;
+  color: #3ecf8e;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.error {
+  color: #f87171;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+.success {
+  color: #3ecf8e;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+.user-info {
+  text-align: center;
+}
+
+.user-info p {
+  margin-bottom: 1rem;
+  color: #888;
+}
+
+.user-info .email {
+  color: #3ecf8e;
+  font-weight: 500;
+}
